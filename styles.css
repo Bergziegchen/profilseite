@@ -126,7 +126,11 @@ position: absolute;
   color: #333;
   text-shadow: 0px 10px 10px gray;
 }
-
+@media (max-width: 1000px) {
+  .Titel {
+    font-size: 4em;
+  }
+}
 
 .bildkette {
   display: flex;
@@ -247,3 +251,4 @@ border: solid 2px black;
 
 
 }
+
