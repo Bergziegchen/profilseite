@@ -1,0 +1,249 @@
+.Impressum{
+text-decoration: none;
+font-size: large;
+cursor: pointer;
+position: relative;
+color: black;
+line-height: 1;
+font-size: 16px;
+display: flex;
+  align-items: center;
+
+}
+.Impressum::after{
+content: "";
+position: absolute;
+height: 2px;
+left: 0;
+bottom: 0;
+width: 0;
+background: darkblue;
+transition: width .2s;
+
+
+}
+.Impressum:hover:after{
+width: 100%;
+
+}
+
+
+
+
+
+.top-bar {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4vh;
+    z-index: 10; /* Stellt sicher, dass die Leiste über anderen Elementen liegt */
+}  
+.Überschrift{
+display: flex;
+text-align: center;
+justify-content: center;
+flex-wrap: nowrap;
+flex-direction: row;
+position: absolute;
+width: 100%;
+height: auto;
+top: -1%;
+z-index: 15;
+margin-bottom: 1em;
+}
+.Leistenschriftzug, .Leistenschriftzug2 {
+  position: absolute;
+  top: 1%;
+  z-index: 16;
+  display: flex;
+  align-items: center; /* <-- sorgt für vertikale Mitte */
+  gap: 1em;
+  font-size: 16px; /* Optional: gleiche Schriftgröße */
+  line-height: 1;   /* Optional: gleichmäßige Höhe */
+}
+.Leistenschriftzug {
+  right: 1%; /* z. B. für linke Ausrichtung */
+}
+
+.Leistenschriftzug2 {
+  right: 5%;
+}
+
+
+
+
+
+.rahmen-headerimg {
+border: 2px solid black;
+border-radius: 5%;
+width: 50vh;
+height: 60vh;
+padding: 10px;
+
+  
+  z-index: -2;
+  background-color: rgb(214, 210, 210);
+}
+header {
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.headerimg {
+height: 55vh;
+width: auto;
+display: block;
+margin: 0 auto;
+border-radius: 50px;
+z-index: 5;
+
+}
+.backgroundheaderimg{
+width: 102%;
+height: 90%;
+position: absolute;
+left: -1%;
+z-index: -3;
+margin: 0;
+padding: 0;
+}
+
+
+.Titel {
+font-size: 5em;
+position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #333;
+  text-shadow: 0px 10px 10px gray;
+}
+
+
+.bildkette {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;  /* optional, aber gut für 3 nebeneinander */
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  position: absolute;
+  top: 120%;
+
+}
+/* Bilder untereinander ab 1000px */
+@media (max-width: 1000px) {
+  .bildkette {
+    flex-direction: column;
+    align-items: center;
+    width: 86%;
+    gap: 2em;
+  }
+}
+
+
+.kaiserbild {
+position: relative;
+margin-top: auto;
+margin-left: 10%;
+
+}
+
+
+
+.bottom-bar {
+background-color: #f0f0f0;
+padding: 10px;
+text-align: center;
+position: absolute;
+top: 314%;
+left: 0;
+width: 100%;
+height: 10vh;
+z-index: 10; /* Stellt sicher, dass die Leiste über anderen Elementen liegt */
+}  
+.quizelement {
+  border: none;
+  border-top: 1vh solid black;
+  border-bottom: 1vh solid black;
+  background-color: rgb(214, 210, 210);
+  width: 105%;
+  margin: 2em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  z-index: 10;
+  position: absolute;
+  top: 219%;
+  left: -1%;
+}
+
+
+
+/* Bilder untereinander ab 1000px */
+@media (max-width: 1000px) {
+  .quizelement, .bottom-bar {
+    margin-top: 100%;
+    align-items: center;
+  }
+}
+.Lampe {
+width: 50%;
+height: auto;
+display: flex;
+justify-content: center;
+align-content: center;
+margin: -5 auto;
+padding: 1em;
+
+}
+.quizeingabe {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto; /* Zentriert auf der Seite */
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+
+  
+}
+
+.quizfrage {
+  font-style: oblique;
+  font-size: 1.8em;
+  text-align: center;
+  
+}
+
+#Quiz,
+#Altersfragebutton {
+  width: 100%;
+  padding: 0.75em;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+
+
+
+
+.quizeingabe, .Lampe{
+border: solid 2px black;
+
+
+
+
+
+}
