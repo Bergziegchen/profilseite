@@ -1,3 +1,12 @@
+body {
+padding: 0;
+margin: 0;
+overflow-x: hidden;
+
+}
+
+
+
 .Impressum{
 text-decoration: none;
 font-size: large;
@@ -294,6 +303,7 @@ padding: 1em;
 
 .quizeingabe, .Lampe{
 border: solid 2px black;
+
 
 
 
